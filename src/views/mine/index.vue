@@ -78,8 +78,9 @@ export default {
        loginout(){
            let _self = this;
             MessageBox.confirm('确定退出登录?').then(function(response) {
+                localStorage.clear();
                 localStorage.isLogin = false;
-                localStorage.token = "";
+                // localStorage.token = "";
                 _self.$router.push('login');
             }).catch(function(error){
 

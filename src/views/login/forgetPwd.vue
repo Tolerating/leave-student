@@ -18,8 +18,9 @@
 </template>
 
 <script>
-import { MessageBox } from 'mint-ui';
-import { Toast } from 'mint-ui';
+import { MessageBox } from 'mint-ui'
+import { Toast } from 'mint-ui'
+import qs from 'qs'
 export default {
     name:"updatePwd",
     data(){
@@ -27,7 +28,7 @@ export default {
             stuID:"",
             isStuIDreadonly:false,
             code:"",
-            serverCode:"123",
+            serverCode:localStorage.code,
             newPwd:"",
             reNewPwd:"",
             rePwd_s:"",
@@ -45,7 +46,7 @@ export default {
             if(this.stuID !== "" && this.newPwd !== "" && this.reNewPwd !== ""){
                 let _self = this;
                 this.$ajax.post(_self.baseUrl + "/LoginModule/upStuPwd",{           
-                    ID:localStorage.StudentID,
+                    ID:_self.stuID,
                     passnew:_self.reNewPwd
                 },{
                     headers: {
