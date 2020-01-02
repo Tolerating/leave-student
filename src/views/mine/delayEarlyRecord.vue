@@ -59,7 +59,7 @@ export default {
             }).then(function(response){
                 console.log(response);
                 if(response.data == "未登录"){
-                   this.notLogin();
+                   _self.notLogin(_self);
                 }
                 let resData = JSON.parse(response.data);
                 _self.leaveRecord = resData;

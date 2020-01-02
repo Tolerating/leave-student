@@ -80,7 +80,8 @@ export default {
                         MessageBox('错误', '提交请假单失败!');
                     });
                 }).catch(function(action){
-                    console.log(action);
+                    MessageBox('错误', '连接服务器失败!');
+                    // console.log(action);
                 });
             }
         }

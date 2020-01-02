@@ -68,7 +68,7 @@ export default {
                     }
                    
                 }).catch(function(error){
-                    MessageBox("错误!");
+                    MessageBox('错误', '连接服务器失败!');
                 });
             }
         },
@@ -126,7 +126,7 @@ export default {
                         },1000);
                     }                   
                 }).catch(function(error){
-                    MessageBox("服务器错误!");
+                   MessageBox('错误', '连接服务器失败!');
                 });
             }
         },

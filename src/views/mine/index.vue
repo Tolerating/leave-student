@@ -80,7 +80,6 @@ export default {
             MessageBox.confirm('确定退出登录?').then(function(response) {
                 localStorage.clear();
                 localStorage.isLogin = false;
-                // localStorage.token = "";
                 _self.$router.push('login');
             }).catch(function(error){
 
@@ -135,7 +134,7 @@ export default {
     mounted(){
         this.getAuditNum();
         this.getOtherNum();
-        // this.checkLogin();
+        this.checkLogin();
     }
 }
 </script>
@@ -187,6 +186,7 @@ export default {
     height: 10%;
     background-color: #f1f2f6;
     width: 100%;
+    cursor: pointer;
 }
 .mine_navbar ul{
     width: 100%;

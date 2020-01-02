@@ -43,6 +43,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    cursor: pointer;
     /* color: red; */
     /* right: 0; */
 }

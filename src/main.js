@@ -11,8 +11,8 @@ Vue.prototype.$ajax = axios
 Vue.use(animate)
 Vue.use(MintUI)
 Vue.config.productionTip = false
-// Vue.prototype.baseUrl = "http://118.25.137.129:35651/leave"
-Vue.prototype.baseUrl = "http://localhost:53285/leave"
+Vue.prototype.baseUrl = "http://118.25.137.129:35651/leave"
+// Vue.prototype.baseUrl = "http://localhost:53285/leave"
 Vue.prototype.notLogin = function(e){
   MessageBox.confirm('请重新登录').then(function(response) {
     localStorage.isLogin = false;

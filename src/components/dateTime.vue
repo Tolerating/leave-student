@@ -1,6 +1,6 @@
 <template>
     <div>
-        <mt-field :label="tName" ref="triggerTime" disabled v-model="showTime" @click.native="tarDate" placeholder="选择时间"></mt-field>
+        <mt-field :label="tName" ref="triggerTime" readonly v-model="showTime" @click.native="tarDate" placeholder="选择时间"></mt-field>
         <mt-datetime-picker
             ref="picker"
             type="datetime"
