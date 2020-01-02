@@ -3,7 +3,7 @@
         <div style="padding:10px 10px 0px 10px">
             <dateTime @sendT="sTime_m" tName="开始时间:" class="bottomBorder"/>
             <dateTime @sendT="eTime_m" ref="eTime" tName="结束时间:" class="bottomBorder"/>
-            <mt-field label="请假结果" v-if="leaveType === 'true'" disabled class="bottomBorder" @click.native="showSel" v-model="leaveResult" placeholder="请选择请假结果"></mt-field>        
+            <mt-field label="请假结果" v-if="leaveType === 'true'" readonly class="bottomBorder" @click.native="showSel" v-model="leaveResult" placeholder="请选择请假结果"></mt-field>        
             <mt-button type="primary" class="submitBtn" @click="determine" size="large">搜索</mt-button>      
             <div class="select" v-show="isShow === true">
                 <transition 
