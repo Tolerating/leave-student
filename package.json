@@ -13,7 +13,7 @@
     "core-js": "^2.6.5",
     "font-awesome": "^4.7.0",
     "mint-ui": "^2.2.13",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "muse-ui": "^3.0.2",
     "muse-ui-loading": "^0.2.0",
     "qs": "^6.8.0",
